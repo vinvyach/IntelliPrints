@@ -17,6 +17,12 @@
             max-width: 800px;
             padding: 20px;
             text-align: left;
+
+        }
+
+        .header-container {
+            margin: 10% 0;
+			margin-bottom: 1px;
         }
 
         header {
@@ -27,18 +33,35 @@
             word-wrap: break-word;
         }
 
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            justify-content: flex-start;
-            margin-bottom: 10px;
-        }
+    nav {
+        margin-bottom: 10px;
+    }
 
-        nav li {
-            margin-right: 10px;
-        }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 3px;
+		background-color: #eee;
+    }
+
+    nav a:hover {
+        background-color: #ccc;
+    }
 
         section {
             margin-bottom: 20px;
@@ -67,55 +90,57 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
+    <div class="header-container">
         <header>
-            <h1 style="max-height: 200px; overflow: auto; margin-top: 200px;">IntelliPrints: Уникальные принты для футболок от искусственного интеллекта</h1>
-            <h2>Меню сайта</h2>
+            <h1 style="max-height: 200px; overflow: auto; margin-top: 50px;">IntelliPrints: Уникальные принты для футболок от искусственного интеллекта</h1>
+            <h2 style="max-height: 200px; overflow: auto; margin-top: 10px; margin-bottom: 10px;">Меню сайта</h2>
         </header>
-
-        <nav>
-            <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <section id="about" style="text-align: justify;">
-            <h2>Обо мне</h2>
-            <p>Добро пожаловать в мир IntelliPrints - место, где умные принты встречают стильные футболки! Мы предлагаем вам уникальную возможность ознакомиться с интеллектуальными дизайнами, созданными искусственным интеллектом.</p>
-            <p>Наш искусственный интеллект - настоящий гений в создании принтов для футболок. Он обладает креативностью и уникальной способностью сочетать цвета, формы и идеи, чтобы создать принты, которые будут вам по вкусу. От умных цитат до графических элементов, наши принты привлекательны и оригинальны.</p>
-            <p>Как это работает? Наш искусственный интеллект использует передовые алгоритмы и машинное обучение для анализа различных источников вдохновения, включая искусство, моду и популярные тренды. Затем он создает уникальные комбинации и идеи, чтобы предложить вам самые интересные и инновационные дизайны принтов.</p>
-            <p>Выбирайте футболки с нашими интеллектуальными принтами в качестве идеального подарка для себя или для тех, кого вы любите. Наши принты создают эффектный и запоминающийся образ, который позволяет выразить вашу индивидуальность и стиль.</p>
-            <p>Так что не теряйте время и дайте нашему искусственному интеллекту возможность вдохновить вас. Исследуйте IntelliPrints и откройте для себя мир принтов для футболок, созданных умом и творчеством искусственного интеллекта.</p>
-        </section>
-
-        <section id="portfolio">
-            <h2>Портфолио</h2>
-            <div class="slider">
-                <div class="slider-container">
-                    <img src="image1.jpg" alt="Изображение 1">
-                    <img src="image2.jpg" alt="Изображение 2">
-                    <img src="image3.jpg" alt="Изображение 3">
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Как связаться со мной:</p>
-            <ul>
-                <li>Email: <a href="mailto:vvmtg01@gmail.com">vvmtg01@gmail.com</a></li>
-                <li>Отправить сообщение: <a href="https://wa.me/77021876725">WhatsApp</a></li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>© 2023 IntelliPrints</p>
-        </footer>
     </div>
 
-    <script>
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" style="text-align: justify;">
+        <h2>Обо мне</h2>
+        <p>Добро пожаловать в мир IntelliPrints - место, где умные принты встречают стильные футболки! Мы предлагаем вам уникальную возможность ознакомиться с интеллектуальными дизайнами, созданными искусственным интеллектом.</p>
+        <p>Наш искусственный интеллект - настоящий гений в создании принтов для футболок. Он обладает креативностью и уникальной способностью сочетать цвета, формы и идеи, чтобы создать принты, которые будут вам по вкусу. От умных цитат до графических элементов, наши принты привлекательны и оригинальны.</p>
+        <p>Как это работает? Наш искусственный интеллект использует передовые алгоритмы и машинное обучение для анализа различных источников вдохновения, включая искусство, моду и популярные тренды. Затем он создает уникальные комбинации и идеи, чтобы предложить вам самые интересные и инновационные дизайны принтов.</p>
+        <p>Выбирайте футболки с нашими интеллектуальными принтами в качестве идеального подарка для себя или для тех, кого вы любите. Наши принты создают эффектный и запоминающийся образ, который позволяет выразить вашу индивидуальность и стиль.</p>
+        <p>Так что не теряйте время и дайте нашему искусственному интеллекту возможность вдохновить вас. Исследуйте IntelliPrints и откройте для себя мир принтов для футболок, созданных умом и творчеством искусственного интеллекта.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="slider">
+            <div class="slider-container">
+                <img src="image1.jpg" alt="Изображение 1">
+                <img src="image2.jpg" alt="Изображение 2">
+                <img src="image3.jpg" alt="Изображение 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Как связаться со мной:</p>
+        <ul>
+            <li>Email: <a href="mailto:vvmtg01@gmail.com">vvmtg01@gmail.com</a></li>
+            <li>Отправить сообщение: <a href="https://wa.me/77021876725">WhatsApp</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2023 IntelliPrints</p>
+    </footer>
+</div>
+
+<script>
         const sliderContainer = document.querySelector('.slider-container');
         const sliderImages = document.querySelectorAll('.slider-container img');
         let slideIndex = 0;
