@@ -23,20 +23,42 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
-            width: 80%;
+            width: 90%;
+            max-width: 800px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s;
         }
         .project:hover {
             transform: scale(1.05);
         }
-        .project img {
+        .slider {
+            position: relative;
             width: 100%;
             max-width: 600px;
+            margin: auto;
+            overflow: hidden;
             border-radius: 10px;
-            margin-top: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
         a {
             color: #ffcc00;
             text-decoration: none;
@@ -60,15 +82,20 @@
         <section class="project">
             <h2>IntelliPrints</h2>
             <p>Проект IntelliPrints — это умный генератор изображений на основе искусственного интеллекта.</p>
-            <img src="https://source.unsplash.com/600x400/?technology" alt="Изображение о технологиях">
-            <img src="https://source.unsplash.com/600x400/?artificial-intelligence" alt="Изображение об ИИ">
-            <img src="https://source.unsplash.com/600x400/?coding" alt="Изображение о программировании">
+            <div class="slider">
+                <div class="slides">
+                    <img src="https://source.unsplash.com/600x400/?technology" alt="Изображение о технологиях">
+                    <img src="https://source.unsplash.com/600x400/?artificial-intelligence" alt="Изображение об ИИ">
+                    <img src="https://source.unsplash.com/600x400/?coding" alt="Изображение о программировании">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
             <ul>
                 <li><strong>Технологии:</strong> HTML, CSS, JavaScript, AI</li>
                 <li><strong>Репозиторий:</strong> <a href="https://github.com/vinvyach/IntelliPrints" target="_blank">GitHub</a></li>
                 <li><strong>Демо:</strong> <a href="https://vinvyach.github.io/IntelliPrints/" target="_blank">Просмотреть</a></li>
             </ul>
-            <p><strong>Используемые технологии:</strong> HTML, CSS (анимации и стили), JavaScript, AI-алгоритмы.</p>
         </section>
         
         <section class="project">
@@ -86,5 +113,16 @@
     <footer>
         <p>© 2025 Все права защищены.</p>
     </footer>
+    <script>
+        let currentIndex = 0;
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const images = document.querySelectorAll('.slides img');
+            currentIndex += direction;
+            if (currentIndex >= images.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
 </body>
 </html>
