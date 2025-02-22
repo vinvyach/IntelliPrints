@@ -1,174 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>IntelliPrints</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | IntelliPrints</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
         }
-
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            text-align: left;
-
-        }
-
-        .header-container {
-            margin: -7% 0;
-			margin-bottom: 20px;
-        }
-
         header {
-            margin-bottom: 10px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
         }
-
-        h1 {
-            word-wrap: break-word;
+        .project {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
         }
-
-        nav {
-            margin-bottom: 10px;
+        .project:hover {
+            transform: scale(1.05);
         }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        nav li {
-            margin-right: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 5px;
-            border-radius: 3px;
-            background-color: #eee;
-        }
-
-        nav a:hover {
-            background-color: #ccc;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        .slider {
-            overflow: hidden;
+        .project img {
             width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-
-        .slider-container {
-            display: flex;
-            justify-content: space-between;
-            transition: transform 0.5s ease;
+        a {
+            color: #ffcc00;
+            text-decoration: none;
         }
-
-        .slider-container img {
-            width: 30%;
-            height: auto;
-            cursor: pointer;
+        a:hover {
+            text-decoration: underline;
         }
-
         footer {
-            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
         }
-
-        #about p {
-        line-height: 1.5;
-        margin-bottom: 10px;
-    }
-
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="header-container">
-        <header>
-            <h1 style="max-height: 200px; overflow: auto; margin-top: 50px;">IntelliPrints: Уникальные принты для футболок от искусственного интеллекта</h1>
-            <h2 style="max-height: 200px; overflow: auto; margin-top: 10px; margin-bottom: 10px;">Меню сайта</h2>
-        </header>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <section id="about" style="text-align: justify;">
-        <h2>Обо мне</h2>
-        <p>Добро пожаловать в мир IntelliPrints - место, где умные принты встречают стильные футболки! Мы предлагаем вам уникальную возможность ознакомиться с интеллектуальными дизайнами, созданными искусственным интеллектом.</p>
-        <p>Наш искусственный интеллект - настоящий гений в создании принтов для футболок. Он обладает креативностью и уникальной способностью сочетать цвета, формы и идеи, чтобы создать принты, которые будут вам по вкусу. От умных цитат до графических элементов, наши принты привлекательны и оригинальны.</p>
-        <p>Как это работает? Наш искусственный интеллект использует передовые алгоритмы и машинное обучение для анализа различных источников вдохновения, включая искусство, моду и популярные тренды. Затем он создает уникальные комбинации и идеи, чтобы предложить вам самые интересные и инновационные дизайны принтов.</p>
-        <p>Выбирайте футболки с нашими интеллектуальными принтами в качестве идеального подарка для себя или для тех, кого вы любите. Наши принты создают эффектный и запоминающийся образ, который позволяет выразить вашу индивидуальность и стиль.</p>
-        <p>Так что не теряйте время и дайте нашему искусственному интеллекту возможность вдохновить вас. Исследуйте IntelliPrints и откройте для себя мир принтов для футболок, созданных умом и творчеством искусственного интеллекта.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Портфолио</h2>
-        <div class="slider">
-            <div class="slider-container">
-                <img src="https://i.postimg.cc/25ZKjhk4/1-photo-2023-06-02-10-42-02.jpg" alt="Изображение 1">
-                <img src="https://i.postimg.cc/W3cfdzzx/2-photo-2023-06-02-10-47-48.jpg" alt="Изображение 2">
-                <img src="https://i.postimg.cc/rmGZxTts/3-photo-2023-06-02-10-49-56.jpg" alt="Изображение 3">
-                <img src="https://i.postimg.cc/zB51R8G2/4-photo-2023-06-02-10-49-56.jpg" alt="Изображение 4">
-                <img src="https://i.postimg.cc/LsKcr2L4/5-photo-2023-06-02-10-49-56.jpg" alt="Изображение 5">
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Как связаться со мной:</p>
-        <ul>
-            <li>Email: <a href="mailto:vvmtg01@gmail.com">YYYXXX@gmail.com</a></li>
-            <li>Отправить сообщение: <a href="https://wa.me/7702YYYXXXX">WhatsApp</a></li>
-        </ul>
-    </section>
-
+    <header>
+        <h1>Портфолио</h1>
+        <p>Проекты и разработки</p>
+    </header>
+    <main>
+        <section class="project">
+            <h2>IntelliPrints</h2>
+            <p>Проект IntelliPrints — это умный генератор изображений на основе искусственного интеллекта.</p>
+            <img src="https://source.unsplash.com/random/600x300/?technology" alt="Изображение о технологиях">
+            <img src="https://source.unsplash.com/random/600x300/?artificial-intelligence" alt="Изображение об ИИ">
+            <img src="https://source.unsplash.com/random/600x300/?coding" alt="Изображение о программировании">
+            <ul>
+                <li><strong>Технологии:</strong> HTML, CSS, JavaScript, AI</li>
+                <li><strong>Репозиторий:</strong> <a href="https://github.com/vinvyach/IntelliPrints" target="_blank">GitHub</a></li>
+                <li><strong>Демо:</strong> <a href="https://vinvyach.github.io/IntelliPrints/" target="_blank">Просмотреть</a></li>
+            </ul>
+            <p><strong>Используемые технологии:</strong> HTML, CSS (анимации и стили), JavaScript, AI-алгоритмы.</p>
+        </section>
+    </main>
     <footer>
-        <p>© 2025 IntelliPrints</p>
+        <p>© 2025 Все права защищены.</p>
     </footer>
-</div>
-
-<script>
-        const sliderContainer = document.querySelector('.slider-container');
-        const sliderImages = document.querySelectorAll('.slider-container img');
-        let slideIndex = 0;
-
-        function nextSlide() {
-            slideIndex++;
-            if (slideIndex > sliderImages.length - 3) {
-                slideIndex = 0;
-            }
-            sliderContainer.style.transform = `translateX(-${slideIndex * 33.33}%)`;
-        }
-
-        function prevSlide() {
-            slideIndex--;
-            if (slideIndex < 0) {
-                slideIndex = sliderImages.length - 3;
-            }
-            sliderContainer.style.transform = `translateX(-${slideIndex * 33.33}%)`;
-        }
-
-        setInterval(nextSlide, 3000);
-    </script>
 </body>
 </html>
